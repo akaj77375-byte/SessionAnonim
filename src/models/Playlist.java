@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Playlist {
@@ -8,12 +9,12 @@ public class Playlist {
     private String imageUrl;
     private List<Song> songs;
 
+   
 
-
-    public Playlist() {
+    public void PlayList() {
     }
 
-    public Playlist(Long id, String title, String imageUrl, List<Song> songs) {
+    public void PlayList(Long id, String title, String imageUrl, List<Song> songs) {
         this.id = id;
         this.title = title;
         this.imageUrl = imageUrl;
@@ -56,7 +57,7 @@ public class Playlist {
 
     @Override
     public String toString() {
-        return "Playlist{" +
+        return "PlayList{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
