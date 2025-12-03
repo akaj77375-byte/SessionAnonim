@@ -11,10 +11,10 @@ public class Playlist {
 
    
 
-    public void PlayList() {
+    public Playlist() {
     }
 
-    public void PlayList(Long id, String title, String imageUrl, List<Song> songs) {
+    public Playlist(Long id, String title, String imageUrl, List<Song> songs) {
         this.id = id;
         this.title = title;
         this.imageUrl = imageUrl;
