@@ -1,29 +1,26 @@
 package models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Playlist {
     private Long id;
     private String title;
     private String imageUrl;
-    private List<Song> songs = new ArrayList<>();
+    private List<Song> songs;
 
-    public void PlayList() {
+
+
+    public Playlist() {
     }
 
-    public void PlayList(Long id, String title, String imageUrl, List<Song> songs) {
+    public Playlist(Long id, String title, String imageUrl, List<Song> songs) {
         this.id = id;
         this.title = title;
         this.imageUrl = imageUrl;
         this.songs = songs;
     }
 
-    public void PlayList(Long id, String title, String imageUrl) {
-        this.id = id;
-        this.title = title;
-        this.imageUrl = imageUrl;
-    }
+
 
     public Long getId() {
         return id;
@@ -59,7 +56,7 @@ public class Playlist {
 
     @Override
     public String toString() {
-        return "PlayList{" +
+        return "Playlist{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
