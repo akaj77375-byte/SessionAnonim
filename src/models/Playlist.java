@@ -7,7 +7,9 @@ public class Playlist {
     private Long id;
     private String title;
     private String imageUrl;
-    private List<Song> songs = new ArrayList<>();
+    private List<Song> songs;
+
+   
 
     public void PlayList() {
     }
@@ -19,11 +21,7 @@ public class Playlist {
         this.songs = songs;
     }
 
-    public void PlayList(Long id, String title, String imageUrl) {
-        this.id = id;
-        this.title = title;
-        this.imageUrl = imageUrl;
-    }
+
 
     public Long getId() {
         return id;
